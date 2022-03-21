@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <script>
+        
+    </script>
+    
+    <style>
+        body{
+            background-image: url(./images/t2.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover  ;
+            
+     
+        }        
+        #menu{
+            display: inline-block;
+            border: solid 2px;
+            border-radius: 10px;
+            background-image: url(./images/t4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 200px;
+            height: 350px;
+            margin-top: 10px;
+            margin-left: 360px;
+            padding: 50px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+        }
+        button{
+            color: black;
+            font-size: 15px;
+            margin-top: 10px;
+            width: 150px;
+            height: 10;
+            border-radius: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        button:hover{
+            background-color: rgba(250, 12, 12, 0);
+        }
+        h1{
+            display: flex;
+            background-color: rgb(47, 11, 11);
+            width: 230px;
+            border: solid 2px;
+            border-radius: 10px;
+            padding: 10px ;
+            margin-left: 385px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px #181515;
+            font-weight: 500px;
+            text-align: center;
+        }
+        #adultos{
+            
+            text-align: center;
+            border-radius: 5px;
+            border: solid 2px black;
+            font-weight: bolder;
+            
+        }
+        #crianças{
+            text-align: center;
+            border-radius: 5px;
+            border: solid 2px black;
+            font-weight: bolder;
+        }
+        #duração{
+            text-align: center;
+            border-radius: 5px;
+            border: solid 2px black;
+            font-weight: bolder;
+        }
+        #carne{
+            text-align: center  ;
+            border-radius: 5px;
+            border: solid 2px black;
+            font-weight: bolder; 
+        }
+        .i{
+            top: 0;
+            font-size: 17px;
+            color: rgb(0, 0, 0)
+        }
+       
+        #kilos_de_carne{
+            margin-right: 1px;
+            color: rgb(204, 131, 35);
+            font-weight: bolder;
+            font-size: larger;
+           
+        }
+        #bebidas{
+            color: rgb(204, 131, 35);
+            font-weight: bolder;
+            font-size: larger;
+           
+        }
+        #Custo{
+        
+            color: rgb(204, 131, 35);
+            font-weight: bolder;
+            font-size: larger;
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Churrascômetro</h1>
+    <div id="menu"> 
+        <div class="i">
+    <form>
+        <label class="a" for="adultos">Adultos</label><br>
+        <input type="number" id="adultos" min="0"  placeholder="Quantidade de adultos"><br>
+        <label class="a" for="crianças">Crianças</label><br>
+        <input type="number" id="crianças" min="0" placeholder="Quantidade de Crianças"><br>
+        <label class="a" for="carne">Valor da Carne</label><br>
+        <input type="number" id="carne" min="0" placeholder="Quantidade em reais"><br> 
+        <label class="a" for="duração">Duração</label><br>
+        <input type="number" id="duração" min="0" placeholder="Quantidade em horas"><br>  
+    </form>
+    </div>
+    <button>Calcule</button>
+    <p id="kilos_de_carne"><p>
+    <p id="bebidas"></p>
+    <p id="Custo"></p>
+    </div>
+<script src="./index.js"></script>    
+</body>
+
+</html>
